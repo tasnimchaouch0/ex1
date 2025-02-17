@@ -12,12 +12,10 @@
         do {
             niveau = prompt("Choisir entre facile | intermédiaire | difficile");
         } while (niveau != "facile" && niveau != "intermédiaire" && niveau != "difficile");
-        var inter = Math.random()*99+1; 
+        var inter = Math.floor(Math.random()*99)+1; 
             if (niveau == "facile" ) n=10;
             else if (niveau == "intermédiaire") n=5;
             else n=3;  
-        alert(n);
-        alert(inter);
         function play(niveau,c){
             let i=0;
             let a;
